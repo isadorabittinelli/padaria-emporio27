@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padaria Empório 27</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <style> 
+    <style>
         body{
-            background-color: #FCF6D2;
+            background-color: #FFF8E7;
             font-family: Arial, Helvetica, sans-serif;
         }
         nav{
@@ -17,7 +17,7 @@
             border-radius: 2px;
         }    
         nav > a{
-            color: #FCF6D2;
+            color: #FFF8E7;
             padding: 10px;
             font-weight: bold;
             text-decoration: none;
@@ -29,23 +29,49 @@
             color: #FCF6D2;
         } 
         main{
-            background-color: white;
             min-width: 300px;
             max-width: 1000px;
             margin: auto;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.258);
-            margin-bottom: 30px;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-        h1, h2{
+        .produtos-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 2rem 0;
+        }
+        .produtos-card{
+            background-color: white;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            font-size: 1.1em;
+        }
+        .produtos-image {
+            width: 100%;
+            height: 250px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .produtos-image img {
+            width: 100%;
+            height: auto;
+            margin: 0 15px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        h1, h2, h3{
             text-align: center;
         }
         main p{
-            font-size: 1.1em;
+            font-size: 1.2em;
             text-align: center;
-            padding-bottom: 30px;
+        }
+        ul p{
+            text-align: center;
+            font-size: 1em;
         }
         main h2{
             color: #597841;
@@ -64,8 +90,81 @@
      <main>
         <article>
             <h1>NOSSAS PRODUÇÕES</h1>
-            <p>Aqui na Padaria Empório 27 você encontrará diversas delicias. Conheça algumas das nossas próprias produções: </p>
-            <h2>SALGADOS</h2>
+            <p>Aqui na Padaria Empório 27 você encontrará diversos produtos preparados diariamente com excelência e ingredientes cuidadosamente selecionados. Conheça algumas das nossas próprias produções: </p>
+            <div class="produtos-grid">
+                <div class="produtos-card">
+                    <h2>SALGADOS</h2>
+                    <div class="produtos-image">
+                        <img src="imagens/esfiha-carne.jpeg" alt="Esfirra de carne">
+                        <img src="imagens/pao-portugues.jpeg" alt="Pão português">
+                        <img src="imagens/coxinha-frango.jpeg" alt="Coxinha de frango">
+                    </div>
+                    <ul>
+                        <p>Esfirra aberta de carne, frango ou queijo</p>
+                        <p>Enroladinho de salsicha</p>
+                        <p>Coxinha de frango</p>
+                        <p>Pão português</p>
+                        <p>Pão de azeite</p>
+                        <p>Esfirra turca</p>
+                        <p>Pães italianos</p>
+                    </ul>
+                </div>    
+            </div>
+            <div class="produtos-grid">
+                <div class="produtos-card">
+                    <h2>DOCES</h2>
+                    <div class="produtos-image">
+                        <img src="imagens/rosca-nutella.jpeg" alt="Rosca de Nutella">
+                        <img src="imagens/torta-quatroleites.jpeg" alt="Torta de quatro leites">
+                        <img src="imagens/goiabinha.jpeg" alt="Goiabinha">
+                    </div>
+                    <ul>
+                        <p>Pudim</p>
+                        <p>Bolo de cenoura, churros, red velvet e outros</p>
+                        <p>Canoli</p>
+                        <p>Pastel folhado de maracujá</p>
+                        <p>Roscas de vários sabores</p>
+                        <p>Goiabinha</p>
+                        <p>Brigadeiro, camafeu, cajuzinho, entre outros</p>
+                    </ul>
+                </div>    
+            </div>
+            <div class="produtos-grid">
+                <div class="produtos-card">
+                    <h2>BEBIDAS</h2>
+                    <div class="produtos-image">
+                        <img src="imagens/cafe-leite.jpeg" alt="Xícara de café com leite">
+                        <img src="imagens/cerveja.jpeg" alt="Garrafa de cerveja">
+                        <img src="imagens/vinho.jpeg" alt="Garrafa de vinho">
+                    </div>
+                    <ul>
+                        <p>Cervejas</p>
+                        <p>Milkshake</p>
+                        <p>Café espresso</p>
+                        <p>Vinhos</p>
+                        <p>Café com leite</p>
+                        <p>Leite achocolatado</p>
+                        <p>Sucos</p>
+                    </ul>
+                </div>    
+            </div>
+            <div class="produtos-grid">
+                <div class="produtos-card">
+                    <h2>OUTROS PRODUTOS</h2>
+                    <div class="produtos-image">
+                        <img src="imagens/queijo-presunto.jpeg" alt="Queijo e presunto peças e fatiados">
+                        <img src="imagens/pao-frances.jpeg" alt="Pão francês de padaria">
+                        <img src="imagens/mortadela.jpeg" alt="Mortadela peça e fatiada">
+                    </div>
+                    <ul>
+                        <p>Pão francês tradicional</p>
+                        <p>Pão com mortadela</p>
+                        <p>Sanduíche de presunto e queijo</p>
+                        <p>Pão na chapa</p>
+                        <p>Lanche frio</p>
+                    </ul>
+                </div>    
+            </div>
         </article>
      </main>
 </body>
