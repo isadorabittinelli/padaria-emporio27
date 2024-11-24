@@ -1,10 +1,10 @@
 @charset "UTF-8"
 body{
-    background-color: #FFF8E7;
+    background-color: #fff8e7;
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
-    background-color: #C89A34;
+    background-color: rgb(207, 178, 110);
     width: 1243px;
     padding: 10px;
     border-radius: 2px;
@@ -19,7 +19,7 @@ nav > a{
 }
 nav > a:hover{
     background-color: #597841;
-    color: #FCF6D2;
+    color: #fcf6d2;
 } 
 main{
     min-width: 300px;
@@ -35,22 +35,22 @@ main{
     padding: 2rem 0;
 }
 .produtos-card{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     font-size: 1.1em;
 }
-.produtos-image {
-    width: 100%;
+.produtos-image{
+    width: auto;
     height: 250px;
     margin: 0 auto;
     display: flex;
 }
-.produtos-image img {
+.produtos-image img{
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0 15px;
     object-fit: cover;
     border-radius: 10px;
