@@ -34,7 +34,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 2rem 0;
 }
-.produtos-card{
+.blocos{
     background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 15px;
@@ -42,7 +42,7 @@ main{
     padding: 1.5rem;
     font-size: 1.1em;
 }
-.produtos-image{
+.produtos-imagens{
     width: auto;
     height: 250px;
     margin: 0 auto;
@@ -54,7 +54,7 @@ iframe{
     margin: 0 auto;
     display: flex;
 }
-.produtos-image img{
+.produtos-imagens img{
     width: 100%;
     height: 100%;
     margin: 0 15px;
